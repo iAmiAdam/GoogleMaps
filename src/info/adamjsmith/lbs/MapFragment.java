@@ -1,15 +1,11 @@
 package info.adamjsmith.lbs;
 
 import android.app.Fragment;
-import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.gms.location.LocationClient;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
@@ -36,9 +32,8 @@ public class MapFragment extends Fragment {
 		map.getUiSettings().setMyLocationButtonEnabled(true);
 		map.setMyLocationEnabled(true);
 		map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
- 
-		MapsInitializer.initialize(this.getActivity());	
 		
+		MapsInitializer.initialize(this.getActivity());	
 		
 		
 		map.setOnMapClickListener(new OnMapClickListener(){

@@ -1,9 +1,12 @@
 package info.adamjsmith.lbs;
 
+import com.google.android.gms.location.LocationClient;
+
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.FragmentManager;
+
 
 
 public class LBSActivity extends Activity {
@@ -22,6 +25,5 @@ public class LBSActivity extends Activity {
 		
 		
 	}
-	
 		
 }
